@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import es.curso.cfg.ConfiguracionSpring;
 import es.curso.modelo.entidad.Pelicula;
@@ -46,7 +45,7 @@ public class MainJavaConfig {
 			
 			GestorPelicula gp = 
 					context.getBean("gestorPelicula",GestorPelicula.class);
-			//Insertamos
+			//Insertamos (con este método estamos evaluando si podremos o no insertar el título de la película a la lista)
 			int respuesta = gp.insertar(pelicula);
 			if(respuesta == 0) {
 				System.out.println("Pelicula Insertada");
@@ -58,10 +57,13 @@ public class MainJavaConfig {
 			//Listamos
 			List<Pelicula> listaPeliculas = gp.listar();
 			System.out.println(listaPeliculas);
+
+			// imprimimos este mensaje para que la consola nos diga el número de películas almacenadas hasta ahora
+			System.out.println("Total de películas almacenadas: " + gp.contar());
 			
-			System.out.println("Desea continuar? s/n:");
+			System.out.println("Desea continuar? [s]/[n]:");
 			continuar = sc.nextLine();
-		}while(continuar.equalsIgnoreCase("s"));
+		} while(continuar.equalsIgnoreCase("s"));
 		
 		System.out.println("Aplicacion finalizada");
 		sc.close();

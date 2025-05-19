@@ -1,6 +1,6 @@
 package es.curso.cfg;
 
-import java.util.LinkedList;
+import  java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
@@ -35,7 +35,7 @@ public class ConfiguracionSpring {
 		DaoPelicula daoPelicula = new DaoPelicula();
 		List<Pelicula> listaPelicula = new LinkedList<>();
 		daoPelicula.setListaPeliculas(listaPelicula);
-		daoPelicula.setNumeroMaximoPelicula(2);
+		daoPelicula.setNumeroMaximoPelicula(5);
 		return daoPelicula;
 	}
 }

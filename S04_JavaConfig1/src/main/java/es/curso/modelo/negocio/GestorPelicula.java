@@ -23,13 +23,13 @@ public class GestorPelicula {
 	 */
 	public int insertar(Pelicula p) {
 		if(p.getTitulo().equals("")) {
-			return 1;
-		}else {
+			return 1; // titulo esta vacío, insertado correctamente
+		} else {
 			boolean insertada = daoPelicula.insertar(p);
 			if(insertada) {
-				return 0;
-			}else {
-				return 2;
+				return 0; // titulo de película ya insertado, anteriormente (copia)
+			} else {
+				return 2; // título de película insertado correctamente, procede a guardar exitosamente
 			}
 		}
 	}
@@ -37,5 +37,23 @@ public class GestorPelicula {
 	public List<Pelicula> listar(){
 		return daoPelicula.getListaPeliculas();
 	}
-	
+
+	public DaoPelicula getDaoPelicula() {
+		return daoPelicula;
+	}
+
+
+	public void setListaPelicula(DaoPelicula daoPelicula) {
+		this.daoPelicula = daoPelicula;
+	}	
+
+
+
+	// Como esto es la parte lógica aquí añadimos un nuevo método que 
+	// nos permitan contar cuantas películas hay
+	public int contar() {
+		return daoPelicula.getListaPeliculas().size();
+	}
 }
+
+
