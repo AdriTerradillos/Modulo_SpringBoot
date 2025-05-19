@@ -35,6 +35,7 @@ public class ConfiguracionSpring {
 		DaoPelicula daoPelicula = new DaoPelicula();
 		List<Pelicula> listaPelicula = new LinkedList<>();
 		daoPelicula.setListaPeliculas(listaPelicula);
+		//daoPelicula.setNumeroMaximoPelicula(2); Modificación de setNumeroMaximoPeliculas() limite al momento de compilar
 		daoPelicula.setNumeroMaximoPelicula(5);
 		return daoPelicula;
 	}
