@@ -38,15 +38,15 @@ public class SaludoService {
 
 ---
 
-## 🧱 Arquitectura por Capas (S02_SpringCapas/)
+## 🧱 Arquitectura por Capas (`S02_SpringCapas/`)
 
 ### 🔹Conceptos Clave 
 
-   Controlador **(Controller)**: Maneja las solicitudes HTTP y las respuestas.
+   -Controlador **(Controller)**: Maneja las solicitudes HTTP y las respuestas.
 
-   Servicio **(Service)**: Contiene la lógica de negocio.
+   -Servicio **(Service)**: Contiene la lógica de negocio.
 
-  Repositorio **(Repository)**: Interactúa con la base de datos.
+  -Repositorio **(Repository)**: Interactúa con la base de datos.
 
 📌 Ejemplo de Código
 
@@ -69,17 +69,17 @@ public class SaludoController {
 
 ---
 
-## 📝 Anotaciones en Spring (S03_SpringAnotaciones/)  
+## 📝 Anotaciones en Spring (`S03_SpringAnotaciones/`)  
 
-### Principales Anotaciones
+--### Principales Anotaciones
 
-   ** @Component**: Marca una clase como un componente de Spring.
+  - ** @Component**: Marca una clase como un componente de Spring.
 
-   **@Service**: Especialización de @Component para la capa de servicio.
+   -**@Service**: Especialización de @Component para la capa de servicio.
 
-   **@Repository**: Especialización de @Component para la capa de acceso a datos.
+  - **@Repository**: Especialización de @Component para la capa de acceso a datos.
 
-   **@Autowired**: Inyecta automáticamente las dependencias.
+  - **@Autowired**: Inyecta automáticamente las dependencias.
 
 📌 Ejemplo de Código
 
@@ -97,16 +97,16 @@ public class SaludoServiceImpl implements SaludoService {
 
 ---
 
-## ⚙️ Configuración Java-based (S04_JavaConfig1/ y S05_JavaConfig2/)
+## ⚙️ Configuración Java-based (`S04_JavaConfig1/` y `S05_JavaConfig2/`)
 ### 🔹Conceptos Clave
 
-   ** Configuración basada en Java**: Definir beans y configuraciones usando clases Java en lugar de archivos XML.
+   **Configuración basada en Java**: Definir beans y configuraciones usando clases Java en lugar de archivos XML.
 
   - Anotaciones:
 
-  **@Configuration**: Indica que la clase contiene definiciones de beans.
+  - **@Configuration**: Indica que la clase contiene definiciones de beans.
   
-  **@Bean**: Define un bean que será gestionado por el contenedor de Spring.
+  - **@Bean**: Define un bean que será gestionado por el contenedor de Spring.
 
 📌 Ejemplo de Código
 
@@ -125,7 +125,7 @@ public class AppConfig {
 
 ---
 
-## 🗄️ Acceso a Datos con JdbcTemplate (S06_JdbcTemplate/)
+## 🗄️ Acceso a Datos con JdbcTemplate (`S06_JdbcTemplate/`)
 ### 🔹 Conceptos Clave
 
     JdbcTemplate: Clase de Spring que simplifica el uso de JDBC para interactuar con bases de datos.
@@ -153,7 +153,7 @@ public class UsuarioRepository {
 
 ---
 
-## 🧪 Proyecto Personal de Ejemplo (MisProyectosPersonales_Maven/demo/)
+## 🧪 Proyecto Personal de Ejemplo (`MisProyectosPersonales_Maven/demo/`)
 ###  Descripción
 
 - Este proyecto es una aplicación sencilla que integra los conceptos aprendidos en los módulos anteriores. Incluye una estructura por capas, uso de anotaciones, configuración Java-based y acceso a datos con JdbcTemplate.
