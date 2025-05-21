@@ -73,13 +73,13 @@ public class SaludoController {
 
 ### Principales Anotaciones
 
-- ** @Component**: Marca una clase como un componente de Spring.
+** @Component**: Marca una clase como un componente de Spring.
 
-   - **@Service**: Especialización de @Component para la capa de servicio.
+   **@Service**: Especialización de @Component para la capa de servicio.
 
-  - **@Repository**: Especialización de @Component para la capa de acceso a datos.
+  **@Repository**: Especialización de @Component para la capa de acceso a datos.
 
-  - **@Autowired**: Inyecta automáticamente las dependencias.
+   **@Autowired**: Inyecta automáticamente las dependencias.
 
 📌 Ejemplo de Código
 
@@ -102,7 +102,7 @@ public class SaludoServiceImpl implements SaludoService {
 
    **Configuración basada en Java**: Definir beans y configuraciones usando clases Java en lugar de archivos XML.
 
-  -- Anotaciones:
+   Anotaciones:
 
   - **@Configuration**: Indica que la clase contiene definiciones de beans.
   
@@ -157,6 +157,7 @@ public class UsuarioRepository {
 ###  Descripción
 
 - Este proyecto es una aplicación sencilla que integra los conceptos aprendidos en los módulos anteriores. Incluye una estructura por capas, uso de anotaciones, configuración Java-based y acceso a datos con JdbcTemplate.
+  
 📌 Ejecución del Proyecto
 
 ```java
