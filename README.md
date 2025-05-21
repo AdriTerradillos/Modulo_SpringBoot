@@ -42,11 +42,11 @@ public class SaludoService {
 
 ### 🔹Conceptos Clave 
 
-   -Controlador **(Controller)**: Maneja las solicitudes HTTP y las respuestas.
+   - Controlador **(Controller)**: Maneja las solicitudes HTTP y las respuestas.
 
-   -Servicio **(Service)**: Contiene la lógica de negocio.
+   - Servicio **(Service)**: Contiene la lógica de negocio.
 
-  -Repositorio **(Repository)**: Interactúa con la base de datos.
+  - Repositorio **(Repository)**: Interactúa con la base de datos.
 
 📌 Ejemplo de Código
 
@@ -71,7 +71,7 @@ public class SaludoController {
 
 ## 📝 Anotaciones en Spring (`S03_SpringAnotaciones/`)  
 
---### Principales Anotaciones
+### Principales Anotaciones
 
   - ** @Component**: Marca una clase como un componente de Spring.
 
@@ -178,7 +178,7 @@ mvn spring-boot:run
 
 ### 📚 Recursos Recomendados
 
-** Para profundizar en estos temas, te recomiendo los siguientes recursos**:
+**Para profundizar en estos temas, te recomiendo los siguientes recursos**:
 
    - Tutorial de Spring Boot en Español:
     FreeCodeCamp
