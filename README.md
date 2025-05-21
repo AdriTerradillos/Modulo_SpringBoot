@@ -73,7 +73,7 @@ public class SaludoController {
 
 ### Principales Anotaciones
 
-** @Component**: Marca una clase como un componente de Spring.
+**@Component**: Marca una clase como un componente de Spring.
 
    **@Service**: Especialización de @Component para la capa de servicio.
 
@@ -128,9 +128,9 @@ public class AppConfig {
 ## 🗄️ Acceso a Datos con JdbcTemplate (`S06_JdbcTemplate/`)
 ### 🔹 Conceptos Clave
 
-    JdbcTemplate: Clase de Spring que simplifica el uso de JDBC para interactuar con bases de datos.
+   - JdbcTemplate: Clase de Spring que simplifica el uso de JDBC para interactuar con bases de datos.
 
-    Operaciones comunes: Consultas, inserciones, actualizaciones y eliminaciones.
+   - Operaciones comunes: Consultas, inserciones, actualizaciones y eliminaciones.
 
 📌 Ejemplo de Código
 
