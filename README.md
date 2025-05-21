@@ -79,7 +79,7 @@ public class SaludoController {
 
    **@Repository**: Especialización de @Component para la capa de acceso a datos.
 
-   ** @Autowired**: Inyecta automáticamente las dependencias.
+   **@Autowired**: Inyecta automáticamente las dependencias.
 
 📌 Ejemplo de Código
 
@@ -102,7 +102,7 @@ public class SaludoServiceImpl implements SaludoService {
 
    ** Configuración basada en Java**: Definir beans y configuraciones usando clases Java en lugar de archivos XML.
 
-  -- Anotaciones:
+  - Anotaciones:
 
   **@Configuration**: Indica que la clase contiene definiciones de beans.
   
